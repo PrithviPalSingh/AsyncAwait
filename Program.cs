@@ -13,6 +13,7 @@ namespace AsyncAwait
     {
         static void Main(string[] args)
         {
+            /*
             //Creating a task to finish
             Task t = LogMainAsync();
 
@@ -20,7 +21,9 @@ namespace AsyncAwait
             LogToEventViewer();
 
             //Wait for task t to finish
-            t.Wait();
+            t.Wait();*/
+
+            new Breakfast().PrepareBreakfast().Wait();
 
             //Print message once t is done working
             Console.WriteLine("Finished");
